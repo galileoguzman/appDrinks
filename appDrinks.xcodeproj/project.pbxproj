@@ -13,6 +13,17 @@
 		F263DED91A9483BB00C7E3C9 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED41A9483BB00C7E3C9 /* ParseCrashReporting.framework */; };
 		F263DEDA1A9483BB00C7E3C9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED51A9483BB00C7E3C9 /* ParseFacebookUtils.framework */; };
 		F263DEDB1A9483BB00C7E3C9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED61A9483BB00C7E3C9 /* ParseUI.framework */; };
+		F263DEDD1A9484B600C7E3C9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEDC1A9484B600C7E3C9 /* AudioToolbox.framework */; };
+		F263DEDF1A9484CF00C7E3C9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEDE1A9484CF00C7E3C9 /* CFNetwork.framework */; };
+		F263DEE11A9484DC00C7E3C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEE01A9484DC00C7E3C9 /* CoreGraphics.framework */; };
+		F263DEE31A9484E700C7E3C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEE21A9484E700C7E3C9 /* CoreLocation.framework */; };
+		F263DEE51A9484F500C7E3C9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEE41A9484F500C7E3C9 /* MobileCoreServices.framework */; };
+		F263DEE71A9484FD00C7E3C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEE61A9484FD00C7E3C9 /* QuartzCore.framework */; };
+		F263DEE91A94850600C7E3C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEE81A94850600C7E3C9 /* Security.framework */; };
+		F263DEEB1A94850F00C7E3C9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEEA1A94850F00C7E3C9 /* StoreKit.framework */; };
+		F263DEED1A94851E00C7E3C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEEC1A94851E00C7E3C9 /* SystemConfiguration.framework */; };
+		F263DEEF1A94852800C7E3C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEEE1A94852800C7E3C9 /* libz.dylib */; };
+		F263DEF11A94853200C7E3C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */; };
 		F2E574571A928AFE00D9F917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574561A928AFE00D9F917 /* main.m */; };
 		F2E5745A1A928AFE00D9F917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574591A928AFE00D9F917 /* AppDelegate.m */; };
 		F2E5745D1A928AFE00D9F917 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E5745C1A928AFE00D9F917 /* Home.m */; };
@@ -46,6 +57,17 @@
 		F263DED41A9483BB00C7E3C9 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		F263DED51A9483BB00C7E3C9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		F263DED61A9483BB00C7E3C9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		F263DEDC1A9484B600C7E3C9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F263DEDE1A9484CF00C7E3C9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F263DEE01A9484DC00C7E3C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F263DEE21A9484E700C7E3C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F263DEE41A9484F500C7E3C9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F263DEE61A9484FD00C7E3C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F263DEE81A94850600C7E3C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F263DEEA1A94850F00C7E3C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F263DEEC1A94851E00C7E3C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F263DEEE1A94852800C7E3C9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F2E574511A928AFE00D9F917 /* appDrinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDrinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E574551A928AFE00D9F917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2E574561A928AFE00D9F917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +97,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F263DEF11A94853200C7E3C9 /* libsqlite3.dylib in Frameworks */,
+				F263DEEF1A94852800C7E3C9 /* libz.dylib in Frameworks */,
+				F263DEED1A94851E00C7E3C9 /* SystemConfiguration.framework in Frameworks */,
+				F263DEEB1A94850F00C7E3C9 /* StoreKit.framework in Frameworks */,
+				F263DEE91A94850600C7E3C9 /* Security.framework in Frameworks */,
+				F263DEE71A9484FD00C7E3C9 /* QuartzCore.framework in Frameworks */,
+				F263DEE51A9484F500C7E3C9 /* MobileCoreServices.framework in Frameworks */,
+				F263DEE31A9484E700C7E3C9 /* CoreLocation.framework in Frameworks */,
+				F263DEE11A9484DC00C7E3C9 /* CoreGraphics.framework in Frameworks */,
+				F263DEDF1A9484CF00C7E3C9 /* CFNetwork.framework in Frameworks */,
+				F263DEDD1A9484B600C7E3C9 /* AudioToolbox.framework in Frameworks */,
 				F263DED81A9483BB00C7E3C9 /* Parse.framework in Frameworks */,
 				F263DED91A9483BB00C7E3C9 /* ParseCrashReporting.framework in Frameworks */,
 				F263DEDB1A9483BB00C7E3C9 /* ParseUI.framework in Frameworks */,
@@ -105,6 +138,17 @@
 		F263DED01A9483A500C7E3C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */,
+				F263DEEE1A94852800C7E3C9 /* libz.dylib */,
+				F263DEEC1A94851E00C7E3C9 /* SystemConfiguration.framework */,
+				F263DEEA1A94850F00C7E3C9 /* StoreKit.framework */,
+				F263DEE81A94850600C7E3C9 /* Security.framework */,
+				F263DEE61A9484FD00C7E3C9 /* QuartzCore.framework */,
+				F263DEE41A9484F500C7E3C9 /* MobileCoreServices.framework */,
+				F263DEE21A9484E700C7E3C9 /* CoreLocation.framework */,
+				F263DEE01A9484DC00C7E3C9 /* CoreGraphics.framework */,
+				F263DEDE1A9484CF00C7E3C9 /* CFNetwork.framework */,
+				F263DEDC1A9484B600C7E3C9 /* AudioToolbox.framework */,
 				F263DED11A9483BB00C7E3C9 /* ParseFramework */,
 			);
 			name = Frameworks;
