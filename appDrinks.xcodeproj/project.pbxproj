@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F263DECE1A947EF100C7E3C9 /* Mapa.m in Sources */ = {isa = PBXBuildFile; fileRef = F263DECD1A947EF100C7E3C9 /* Mapa.m */; };
+		F263DED71A9483BB00C7E3C9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED21A9483BB00C7E3C9 /* Bolts.framework */; };
+		F263DED81A9483BB00C7E3C9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED31A9483BB00C7E3C9 /* Parse.framework */; };
+		F263DED91A9483BB00C7E3C9 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED41A9483BB00C7E3C9 /* ParseCrashReporting.framework */; };
+		F263DEDA1A9483BB00C7E3C9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED51A9483BB00C7E3C9 /* ParseFacebookUtils.framework */; };
+		F263DEDB1A9483BB00C7E3C9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED61A9483BB00C7E3C9 /* ParseUI.framework */; };
 		F2E574571A928AFE00D9F917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574561A928AFE00D9F917 /* main.m */; };
 		F2E5745A1A928AFE00D9F917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574591A928AFE00D9F917 /* AppDelegate.m */; };
 		F2E5745D1A928AFE00D9F917 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E5745C1A928AFE00D9F917 /* Home.m */; };
@@ -19,6 +25,7 @@
 		F2E574851A92AD5F00D9F917 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E574821A92AD5F00D9F917 /* list.png */; };
 		F2E574861A92AD5F00D9F917 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E574831A92AD5F00D9F917 /* map.png */; };
 		F2E574871A92AD5F00D9F917 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E574841A92AD5F00D9F917 /* profile.png */; };
+		F2EC77121A947D5600BE6545 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC77111A947D5600BE6545 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F263DECC1A947EF100C7E3C9 /* Mapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapa.h; sourceTree = "<group>"; };
+		F263DECD1A947EF100C7E3C9 /* Mapa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapa.m; sourceTree = "<group>"; };
+		F263DED21A9483BB00C7E3C9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F263DED31A9483BB00C7E3C9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F263DED41A9483BB00C7E3C9 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		F263DED51A9483BB00C7E3C9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		F263DED61A9483BB00C7E3C9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		F2E574511A928AFE00D9F917 /* appDrinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDrinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E574551A928AFE00D9F917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2E574561A928AFE00D9F917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +66,8 @@
 		F2E574821A92AD5F00D9F917 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		F2E574831A92AD5F00D9F917 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		F2E574841A92AD5F00D9F917 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		F2EC77101A947D5600BE6545 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../../../../../../Documents/MapViewController.h; sourceTree = "<group>"; };
+		F2EC77111A947D5600BE6545 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../../../../../../Documents/MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F263DED81A9483BB00C7E3C9 /* Parse.framework in Frameworks */,
+				F263DED91A9483BB00C7E3C9 /* ParseCrashReporting.framework in Frameworks */,
+				F263DEDB1A9483BB00C7E3C9 /* ParseUI.framework in Frameworks */,
+				F263DEDA1A9483BB00C7E3C9 /* ParseFacebookUtils.framework in Frameworks */,
+				F263DED71A9483BB00C7E3C9 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +93,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F263DECF1A94831800C7E3C9 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F2E5747E1A929C3300D9F917 /* MenuViewController.h */,
+				F2E5747F1A929C3300D9F917 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F263DED01A9483A500C7E3C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F263DED11A9483BB00C7E3C9 /* ParseFramework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F263DED11A9483BB00C7E3C9 /* ParseFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F263DED21A9483BB00C7E3C9 /* Bolts.framework */,
+				F263DED31A9483BB00C7E3C9 /* Parse.framework */,
+				F263DED41A9483BB00C7E3C9 /* ParseCrashReporting.framework */,
+				F263DED51A9483BB00C7E3C9 /* ParseFacebookUtils.framework */,
+				F263DED61A9483BB00C7E3C9 /* ParseUI.framework */,
+			);
+			path = ParseFramework;
+			sourceTree = "<group>";
+		};
 		F2E574481A928AFE00D9F917 = {
 			isa = PBXGroup;
 			children = (
@@ -93,13 +143,15 @@
 		F2E574531A928AFE00D9F917 /* appDrinks */ = {
 			isa = PBXGroup;
 			children = (
+				F263DED01A9483A500C7E3C9 /* Frameworks */,
 				F2E574811A92AD5F00D9F917 /* static */,
+				F263DECF1A94831800C7E3C9 /* Menu */,
 				F2E574581A928AFE00D9F917 /* AppDelegate.h */,
 				F2E574591A928AFE00D9F917 /* AppDelegate.m */,
 				F2E5745B1A928AFE00D9F917 /* Home.h */,
 				F2E5745C1A928AFE00D9F917 /* Home.m */,
-				F2E5747E1A929C3300D9F917 /* MenuViewController.h */,
-				F2E5747F1A929C3300D9F917 /* MenuViewController.m */,
+				F263DECC1A947EF100C7E3C9 /* Mapa.h */,
+				F263DECD1A947EF100C7E3C9 /* Mapa.m */,
 				F2E5745E1A928AFE00D9F917 /* Main.storyboard */,
 				F2E574611A928AFE00D9F917 /* Images.xcassets */,
 				F2E574631A928AFE00D9F917 /* LaunchScreen.xib */,
@@ -150,6 +202,8 @@
 				F2E574821A92AD5F00D9F917 /* list.png */,
 				F2E574831A92AD5F00D9F917 /* map.png */,
 				F2E574841A92AD5F00D9F917 /* profile.png */,
+				F2EC77101A947D5600BE6545 /* MapViewController.h */,
+				F2EC77111A947D5600BE6545 /* MapViewController.m */,
 			);
 			path = static;
 			sourceTree = "<group>";
@@ -260,6 +314,8 @@
 				F2E5745D1A928AFE00D9F917 /* Home.m in Sources */,
 				F2E5745A1A928AFE00D9F917 /* AppDelegate.m in Sources */,
 				F2E574571A928AFE00D9F917 /* main.m in Sources */,
+				F263DECE1A947EF100C7E3C9 /* Mapa.m in Sources */,
+				F2EC77121A947D5600BE6545 /* MapViewController.m in Sources */,
 				F2E5747D1A928B8F00D9F917 /* SWRevealViewController.m in Sources */,
 				F2E574801A929C3300D9F917 /* MenuViewController.m in Sources */,
 			);
@@ -383,6 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/appDrinks/ParseFramework",
+				);
 				INFOPLIST_FILE = appDrinks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,6 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/appDrinks/ParseFramework",
+				);
 				INFOPLIST_FILE = appDrinks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +516,7 @@
 				F2E574761A928AFE00D9F917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2E574771A928AFE00D9F917 /* Build configuration list for PBXNativeTarget "appDrinksTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +525,7 @@
 				F2E574791A928AFE00D9F917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
