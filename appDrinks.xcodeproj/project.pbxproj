@@ -24,6 +24,7 @@
 		F263DEED1A94851E00C7E3C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEEC1A94851E00C7E3C9 /* SystemConfiguration.framework */; };
 		F263DEEF1A94852800C7E3C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEEE1A94852800C7E3C9 /* libz.dylib */; };
 		F263DEF11A94853200C7E3C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */; };
+		F2C502F11A9632F200AF2CAC /* CeldaBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C502F01A9632F200AF2CAC /* CeldaBar.m */; };
 		F2E574571A928AFE00D9F917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574561A928AFE00D9F917 /* main.m */; };
 		F2E5745A1A928AFE00D9F917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574591A928AFE00D9F917 /* AppDelegate.m */; };
 		F2E5745D1A928AFE00D9F917 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E5745C1A928AFE00D9F917 /* Home.m */; };
@@ -68,6 +69,8 @@
 		F263DEEC1A94851E00C7E3C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F263DEEE1A94852800C7E3C9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F2C502EF1A9632F200AF2CAC /* CeldaBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldaBar.h; sourceTree = "<group>"; };
+		F2C502F01A9632F200AF2CAC /* CeldaBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldaBar.m; sourceTree = "<group>"; };
 		F2E574511A928AFE00D9F917 /* appDrinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDrinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E574551A928AFE00D9F917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2E574561A928AFE00D9F917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -166,6 +169,15 @@
 			path = ParseFramework;
 			sourceTree = "<group>";
 		};
+		F2C502EE1A9632D400AF2CAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2C502EF1A9632F200AF2CAC /* CeldaBar.h */,
+				F2C502F01A9632F200AF2CAC /* CeldaBar.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F2E574481A928AFE00D9F917 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 		F2E574531A928AFE00D9F917 /* appDrinks */ = {
 			isa = PBXGroup;
 			children = (
+				F2C502EE1A9632D400AF2CAC /* Models */,
 				F263DED01A9483A500C7E3C9 /* Frameworks */,
 				F2E574811A92AD5F00D9F917 /* static */,
 				F263DECF1A94831800C7E3C9 /* Menu */,
@@ -358,6 +371,7 @@
 				F2E5745D1A928AFE00D9F917 /* Home.m in Sources */,
 				F2E5745A1A928AFE00D9F917 /* AppDelegate.m in Sources */,
 				F2E574571A928AFE00D9F917 /* main.m in Sources */,
+				F2C502F11A9632F200AF2CAC /* CeldaBar.m in Sources */,
 				F263DECE1A947EF100C7E3C9 /* Mapa.m in Sources */,
 				F2EC77121A947D5600BE6545 /* MapViewController.m in Sources */,
 				F2E5747D1A928B8F00D9F917 /* SWRevealViewController.m in Sources */,

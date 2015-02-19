@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface Home : UIViewController
+@interface Home : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButtonMenu;
+- (IBAction)btnReloadDataSender:(id)sender;
 
 @end
 
