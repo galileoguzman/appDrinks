@@ -35,7 +35,7 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="irF-XX-Kau" kind="relationship" relationship="rootViewController" id="g24-Zy-kGA"/>
+                        <segue destination="dzJ-Qv-o1p" kind="relationship" relationship="rootViewController" id="3xu-Sg-dyh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Tw-zl-4hA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -43,70 +43,68 @@
             <point key="canvasLocation" x="291" y="602"/>
         </scene>
         <!--Home-->
-        <scene sceneID="OS8-yl-RXb">
+        <scene sceneID="TZN-BR-COG">
             <objects>
-                <viewController id="irF-XX-Kau" customClass="Home" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aUa-JO-WS2">
+                <tableViewController id="dzJ-Qv-o1p" customClass="Home" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="sC5-i0-b4s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="22" sectionFooterHeight="22" id="mcC-aJ-7Lj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellBar" rowHeight="57" id="gVq-Ve-0XI" customClass="CeldaBar">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gVq-Ve-0XI" id="wy3-rV-vA9">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KO2-UA-Sec" userLabel="imgBar">
-                                                    <rect key="frame" x="20" y="3" width="337" height="106"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Costumbre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2na-oV-EMm" userLabel="lblNombre">
-                                                    <rect key="frame" x="78" y="6" width="165" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar de la Motosierra Vera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uhJ-N9-wIZ" userLabel="lblDescripcion">
-                                                    <rect key="frame" x="78" y="27" width="165" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="imgBar" destination="KO2-UA-Sec" id="DQX-4v-gAN"/>
-                                            <outlet property="lblDescripcionBar" destination="uhJ-N9-wIZ" id="X7O-Y3-Bln"/>
-                                            <outlet property="lblNombreBar" destination="2na-oV-EMm" id="vzv-ez-dJE"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="irF-XX-Kau" id="TRg-I7-JqA"/>
-                                    <outlet property="delegate" destination="irF-XX-Kau" id="gMC-8L-W5B"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="PHU-G6-dvx">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="organize" id="zAJ-rI-JWI"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="sNg-9p-g3s"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellBar" rowHeight="63" id="ZlT-5M-B0v">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZlT-5M-B0v" id="EoU-TR-4KO">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Costumbre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gYw-k5-1Ts">
+                                            <rect key="frame" x="74" y="8" width="167" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar de la Motosierra Vera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wj3-YM-OyA">
+                                            <rect key="frame" x="74" y="33" width="174" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7R7-7i-Sc3">
+                                            <rect key="frame" x="16" y="6" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dzJ-Qv-o1p" id="wIT-7R-RBF"/>
+                            <outlet property="delegate" destination="dzJ-Qv-o1p" id="aZD-TQ-a5F"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ttL-i7-hbX">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="organize" id="PVF-vR-O2Q"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Nqd-cd-hzO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ebj-Vc-anG">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRefreshData:" destination="dzJ-Qv-o1p" eventType="touchUpInside" id="XSl-Ze-kgq"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="barButtonMenu" destination="zAJ-rI-JWI" id="i2N-hP-4Cv"/>
+                        <outlet property="barButtonMenu" destination="PVF-vR-O2Q" id="Y5A-0W-Wxv"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uy0-C0-7si" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrX-Z8-GH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="602"/>
+            <point key="canvasLocation" x="778" y="602"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="xkh-jc-6s9">

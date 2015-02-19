@@ -1,17 +1,15 @@
 //
-//  ViewController.m
+//  Home.m
 //  appDrinks
 //
-//  Created by Galileo Guzman on 16/02/15.
+//  Created by Galileo Guzman on 19/02/15.
 //  Copyright (c) 2015 Galileo Guzman. All rights reserved.
 //
 
 #import "Home.h"
 #import "SWRevealViewController/SWRevealViewController.h"
-#import "CeldaBar.h"
-
-
-NSMutableArray *bares;
+#import "Parse/Parse.h"
+#import <ParseUI/PFTableViewCell.h>
 
 @interface Home ()
 
@@ -21,7 +19,6 @@ NSMutableArray *bares;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Configure SWReveal for Menu
     
     self.title = @"Home";
     
@@ -32,31 +29,13 @@ NSMutableArray *bares;
         [self.barButtonMenu setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+
     
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
     
-    //Get all data from parse
-    
-    bares = [[NSMutableArray alloc] init];
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"bar"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            // The find succeeded. The first 100 objects are available in objects
-            dispatch_async(dispatch_get_main_queue(), ^{
-                for (id obj in objects){
-                    [bares addObject:obj];
-                    NSLog(@"bares %d", (int)[bares count]);
-                }
-                
-            });
-            
-        } else {
-            // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
-    
-    NSLog(@"Total de registros obtenidos desde parse %d", (int)[bares count]);
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,42 +43,57 @@ NSMutableArray *bares;
     // Dispose of any resources that can be recreated.
 }
 
-//Configure table view to show bars
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithClassName:@"bar"];
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // The className to query on
+        self.parseClassName = @"name";
+        
+        // Whether the built-in pull-to-refresh is enabled
+        self.pullToRefreshEnabled = YES;
+        
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
+        
+        // The number of objects to show per page
+        self.objectsPerPage = 15;
+    }
+    return self;
+}
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 0;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 0;
-}
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"cellBar";
-    CeldaBar *cell = (CeldaBar *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+#pragma mark - PFQueryTableViewController
+
+// Override to customize the look of a cell representing an object. The default is to display
+// a UITableViewCellStyleDefault style cell with the label being the textKey in the object,
+// and the imageView being the imageKey in the object.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
+    static NSString *CellIdentifier = @"Cell";
+    
+    PFTableViewCell *cell = (PFTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[CeldaBar alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    //Object from Parse
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"EEEE, MMMM d yyyy"];
+    NSDate *date = [object createdAt];
     
-    PFObject *objTemp = bares[indexPath.row];
-    
-    NSLog(@"Nombre %@", objTemp[@"name"]);
-    
-    cell.lblNombreBar.text = objTemp[@"name"];
-    cell.lblDescripcionBar.text = objTemp[@"description"];
-    //cell.imgBar.image = [UIImage imageNamed:bares[indexPath.row]];
+    // Configure the cell
+    cell.textLabel.text = [object objectForKey:@"title"];
+    cell.detailTextLabel.text = [dateFormatter stringFromDate:date];
+    cell.imageView.image = [UIImage imageNamed:@"note"];
     
     return cell;
 }
 
 
-- (IBAction)btnReloadDataSender:(id)sender {
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+}
+- (IBAction)btnRefreshData:(id)sender {
 }
 @end
