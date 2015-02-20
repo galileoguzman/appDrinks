@@ -43,7 +43,7 @@
     region.center=location;
     
     MKUserLocation *userLocation = self.mapMapBar.userLocation;
-    region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, 200, 200);
+    region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, 2000, 2000);
     
     [self.mapMapBar setRegion:region animated:TRUE];
     [self.mapMapBar regionThatFits:region];

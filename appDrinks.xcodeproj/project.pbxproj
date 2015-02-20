@@ -151,6 +151,7 @@
 		F263DED01A9483A500C7E3C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2C6CD731A97155100805B63 /* MapKit.framework */,
 				F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */,
 				F263DEEE1A94852800C7E3C9 /* libz.dylib */,
 				F263DEEC1A94851E00C7E3C9 /* SystemConfiguration.framework */,
@@ -218,7 +219,6 @@
 		F2E574481A928AFE00D9F917 = {
 			isa = PBXGroup;
 			children = (
-				F2C6CD731A97155100805B63 /* MapKit.framework */,
 				F2E574531A928AFE00D9F917 /* appDrinks */,
 				F2E5746D1A928AFE00D9F917 /* appDrinksTests */,
 				F2E574521A928AFE00D9F917 /* Products */,
