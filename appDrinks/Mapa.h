@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface Mapa : UIViewController
+@interface Mapa : UIViewController<MKMapViewDelegate>
+@property (strong, nonatomic) IBOutlet MKMapView *mapMapBar;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButtonMenu;
 
