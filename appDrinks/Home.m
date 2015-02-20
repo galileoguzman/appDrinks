@@ -90,21 +90,15 @@
     cell.lblNombreBar.text = [object objectForKey:@"name"];
     
     cell.lblDescripcionBar.text = [object objectForKey:@"description"];
+   
+    PFFile *theImage = [object objectForKey:@"imageBar"];
+    [theImage getDataInBackgroundWithBlock:^(NSData *data, NSError *error){
+        
+        NSData *imageFile = [theImage getData];
+        //Set the animals Icon Image to what ever is intended.
+        cell.imgBar.image = [UIImage imageWithData:imageFile];
+    }];
     
-    cell.imgBar.image = [UIImage imageNamed:@"imageBar"];
-    PFFile *thumbnail = [object objectForKey:@"imageBar"];
-    PFImageView *thumbnailImageView = (PFImageView*)[cell.imgBar];
-    thumbnailImageView.image = [UIImage imageNamed:@"drink.png"];
-    thumbnailImageView.file = thumbnail;
-    [thumbnailImageView loadInBackground];
-    
-    //cell.imageView.image = [UIImage imageNamed:@"note"];
-    // Configure the cell
-    //PFFile *thumbnail = [object objectForKey:@"imageFile"];
-    //PFImageView *thumbnailImageView = (PFImageView*)[cell viewWithTag:100];
-    //thumbnailImageView.image = [UIImage imageNamed:@"placeholder.jpg"];
-    //thumbnailImageView.file = thumbnail;
-    //[thumbnailImageView loadInBackground];
     
     return cell;
 }
