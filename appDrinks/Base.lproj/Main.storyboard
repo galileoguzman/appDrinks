@@ -80,6 +80,7 @@
                                     <outlet property="imgBar" destination="7R7-7i-Sc3" id="3C7-y8-rdq"/>
                                     <outlet property="lblDescripcionBar" destination="wj3-YM-OyA" id="RR8-fN-85o"/>
                                     <outlet property="lblNombreBar" destination="gYw-k5-1Ts" id="78z-tK-pH6"/>
+                                    <segue destination="hKa-5k-Ksa" kind="push" identifier="showDetailView" trigger="accessoryAction" id="UCe-q2-ZSh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -105,22 +106,6 @@
             <point key="canvasLocation" x="779" y="602"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="k5z-9A-9rX">
-            <objects>
-                <navigationController id="GdH-yz-fgN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4jE-lg-Y7g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="hKa-5k-Ksa" kind="relationship" relationship="rootViewController" id="Cbn-N6-BZ9"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xhc-uk-dEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="779" y="1334"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="NKF-7h-AGg">
             <objects>
                 <navigationController id="OZj-Kr-BBw" sceneMemberID="viewController">
@@ -134,7 +119,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7L1-zJ-Bye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1197" y="602"/>
+            <point key="canvasLocation" x="779" y="1454"/>
         </scene>
         <!--New-->
         <scene sceneID="zSP-Xz-cbQ">
@@ -216,17 +201,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0u-8m-TOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="602"/>
+            <point key="canvasLocation" x="1231" y="1454"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail-->
         <scene sceneID="kDI-zo-iQ4">
             <objects>
-                <viewController id="hKa-5k-Ksa" sceneMemberID="viewController">
+                <viewController id="hKa-5k-Ksa" customClass="Detail" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SQI-7v-LTe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Mkf-A4-EmU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drink.png" id="Mkf-A4-EmU">
                                 <rect key="frame" x="0.0" y="65" width="320" height="198"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -248,10 +233,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XKJ-At-3tE"/>
+                    <connections>
+                        <outlet property="imgBar" destination="Mkf-A4-EmU" id="WOI-hI-Xu1"/>
+                        <outlet property="lblDescription" destination="mS9-gQ-Npa" id="WsQ-ns-Ya8"/>
+                        <outlet property="lblNameBar" destination="WzQ-U5-Bwa" id="FQh-dC-6ux"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1t-8Q-qUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="1334"/>
+            <point key="canvasLocation" x="1250" y="602"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="xkh-jc-6s9">
@@ -379,9 +369,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="R5d-KR-gqf">
-                                <rect key="frame" x="0.0" y="-5" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-5" width="320" height="522"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vI4-EE-uAc">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

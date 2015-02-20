@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F25937AF1A97334E0001D67F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25937AE1A97334D0001D67F /* iAd.framework */; };
+		F25937B11A9739FA0001D67F /* beer-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = F25937B01A9739FA0001D67F /* beer-hi.png */; };
 		F263DECE1A947EF100C7E3C9 /* Mapa.m in Sources */ = {isa = PBXBuildFile; fileRef = F263DECD1A947EF100C7E3C9 /* Mapa.m */; };
 		F263DED71A9483BB00C7E3C9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED21A9483BB00C7E3C9 /* Bolts.framework */; };
 		F263DED81A9483BB00C7E3C9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DED31A9483BB00C7E3C9 /* Parse.framework */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F25937AE1A97334D0001D67F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		F25937B01A9739FA0001D67F /* beer-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-hi.png"; sourceTree = "<group>"; };
 		F263DECC1A947EF100C7E3C9 /* Mapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapa.h; sourceTree = "<group>"; };
 		F263DECD1A947EF100C7E3C9 /* Mapa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapa.m; sourceTree = "<group>"; };
 		F263DED21A9483BB00C7E3C9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25937AF1A97334E0001D67F /* iAd.framework in Frameworks */,
 				F2C6CD741A97155100805B63 /* MapKit.framework in Frameworks */,
 				F263DEF11A94853200C7E3C9 /* libsqlite3.dylib in Frameworks */,
 				F263DEEF1A94852800C7E3C9 /* libz.dylib in Frameworks */,
@@ -151,6 +156,7 @@
 		F263DED01A9483A500C7E3C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F25937AE1A97334D0001D67F /* iAd.framework */,
 				F2C6CD731A97155100805B63 /* MapKit.framework */,
 				F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */,
 				F263DEEE1A94852800C7E3C9 /* libz.dylib */,
@@ -295,6 +301,7 @@
 		F2E574811A92AD5F00D9F917 /* static */ = {
 			isa = PBXGroup;
 			children = (
+				F25937B01A9739FA0001D67F /* beer-hi.png */,
 				F2C6CD6D1A97030800805B63 /* menu.png */,
 				F2C6CD671A96FD2B00805B63 /* drink.png */,
 				F2E574821A92AD5F00D9F917 /* list.png */,
@@ -385,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25937B11A9739FA0001D67F /* beer-hi.png in Resources */,
 				F2C6CD6E1A97030800805B63 /* menu.png in Resources */,
 				F2C6CD681A96FD2B00805B63 /* drink.png in Resources */,
 				F2E574601A928AFE00D9F917 /* Main.storyboard in Resources */,

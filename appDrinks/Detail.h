@@ -10,4 +10,8 @@
 
 @interface Detail : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *imgBar;
+@property (strong, nonatomic) IBOutlet UILabel *lblNameBar;
+@property (strong, nonatomic) IBOutlet UILabel *lblDescription;
+
 @end

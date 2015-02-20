@@ -12,6 +12,7 @@
 #import <ParseUI/PFTableViewCell.h>
 #import <ParseUI/PFQueryTableViewController.h>
 #import "CeldaBar.h"
+#import "Detail.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -39,7 +40,7 @@
         self.paginationEnabled = YES;
         
         // The number of objects to show per page
-        self.objectsPerPage = 15;
+        self.objectsPerPage = 9;
     }
     return self;
 }
@@ -71,6 +72,8 @@
 - (PFQuery *)queryForTable
 {
     PFQuery *query = [PFQuery queryWithClassName:@"bar"];
+    
+    [query orderByDescending:@"createdAt"];
     
     return query;
 }
@@ -108,6 +111,34 @@
     [super objectsDidLoad:error];
     
     //NSLog(@"error: %@", [error localizedDescription]);
-}- (IBAction)btnRefreshData:(id)sender {
 }
+
+//Detail segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Detalle");
+    if ([segue.identifier isEqualToString:@"showDetailView"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Detail *detailBar = segue.destinationViewController;
+        
+        PFObject *object = [self.objects objectAtIndex:indexPath.row];
+        detailBar.lblNameBar = [object objectForKey:@"name"];
+        detailBar.imgBar = [object objectForKey:@"imageBar"];
+        detailBar.lblDescription = [object objectForKey:@"description"];
+        
+    }
+}
+
+//Deleting row from parse dot com
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Remove the row from data model
+    PFObject *object = [self.objects objectAtIndex:indexPath.row];
+    [object deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        //[self refreshTable:nil];
+    }];
+}
+
+- (IBAction)btnRefreshData:(id)sender {
+}
+
 @end

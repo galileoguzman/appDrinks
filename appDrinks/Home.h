@@ -10,8 +10,8 @@
 #import <Parse/Parse.h>
 #import <ParseUI/PFQueryTableViewController.h>
 
-
 @interface Home : PFQueryTableViewController
+
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *barButtonMenu;
 - (IBAction)btnRefreshData:(id)sender;
 

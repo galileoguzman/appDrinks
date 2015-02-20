@@ -14,6 +14,10 @@
 
 @implementation Detail
 
+@synthesize lblNameBar;
+@synthesize lblDescription;
+@synthesize imgBar;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
