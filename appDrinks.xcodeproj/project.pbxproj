@@ -26,6 +26,10 @@
 		F263DEF11A94853200C7E3C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F263DEF01A94853200C7E3C9 /* libsqlite3.dylib */; };
 		F2B492D71A969CCA00E98FCA /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B492D61A969CCA00E98FCA /* Home.m */; };
 		F2C502F11A9632F200AF2CAC /* CeldaBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C502F01A9632F200AF2CAC /* CeldaBar.m */; };
+		F2C6CD681A96FD2B00805B63 /* drink.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C6CD671A96FD2B00805B63 /* drink.png */; };
+		F2C6CD6B1A96FEBC00805B63 /* New.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C6CD6A1A96FEBC00805B63 /* New.m */; };
+		F2C6CD6E1A97030800805B63 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C6CD6D1A97030800805B63 /* menu.png */; };
+		F2C6CD711A97045000805B63 /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C6CD701A97045000805B63 /* Detail.m */; };
 		F2E574571A928AFE00D9F917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574561A928AFE00D9F917 /* main.m */; };
 		F2E5745A1A928AFE00D9F917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E574591A928AFE00D9F917 /* AppDelegate.m */; };
 		F2E574601A928AFE00D9F917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E5745E1A928AFE00D9F917 /* Main.storyboard */; };
@@ -37,7 +41,6 @@
 		F2E574851A92AD5F00D9F917 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E574821A92AD5F00D9F917 /* list.png */; };
 		F2E574861A92AD5F00D9F917 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E574831A92AD5F00D9F917 /* map.png */; };
 		F2E574871A92AD5F00D9F917 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E574841A92AD5F00D9F917 /* profile.png */; };
-		F2EC77121A947D5600BE6545 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EC77111A947D5600BE6545 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,12 @@
 		F2B492D61A969CCA00E98FCA /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		F2C502EF1A9632F200AF2CAC /* CeldaBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeldaBar.h; sourceTree = "<group>"; };
 		F2C502F01A9632F200AF2CAC /* CeldaBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeldaBar.m; sourceTree = "<group>"; };
+		F2C6CD671A96FD2B00805B63 /* drink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drink.png; sourceTree = "<group>"; };
+		F2C6CD691A96FEBC00805B63 /* New.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = New.h; sourceTree = "<group>"; };
+		F2C6CD6A1A96FEBC00805B63 /* New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New.m; sourceTree = "<group>"; };
+		F2C6CD6D1A97030800805B63 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		F2C6CD6F1A97045000805B63 /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		F2C6CD701A97045000805B63 /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
 		F2E574511A928AFE00D9F917 /* appDrinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appDrinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E574551A928AFE00D9F917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2E574561A928AFE00D9F917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,8 +100,6 @@
 		F2E574821A92AD5F00D9F917 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		F2E574831A92AD5F00D9F917 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		F2E574841A92AD5F00D9F917 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
-		F2EC77101A947D5600BE6545 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../../../../../../Documents/MapViewController.h; sourceTree = "<group>"; };
-		F2EC77111A947D5600BE6545 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../../../../../../Documents/MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +185,33 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		F2C6CD661A96FCC100805B63 /* Mapa */ = {
+			isa = PBXGroup;
+			children = (
+				F263DECC1A947EF100C7E3C9 /* Mapa.h */,
+				F263DECD1A947EF100C7E3C9 /* Mapa.m */,
+			);
+			name = Mapa;
+			sourceTree = "<group>";
+		};
+		F2C6CD6C1A96FED100805B63 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				F2C6CD691A96FEBC00805B63 /* New.h */,
+				F2C6CD6A1A96FEBC00805B63 /* New.m */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		F2C6CD721A97045600805B63 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F2C6CD6F1A97045000805B63 /* Detail.h */,
+				F2C6CD701A97045000805B63 /* Detail.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
 		F2E574481A928AFE00D9F917 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +233,9 @@
 		F2E574531A928AFE00D9F917 /* appDrinks */ = {
 			isa = PBXGroup;
 			children = (
+				F2C6CD721A97045600805B63 /* Detail */,
+				F2C6CD6C1A96FED100805B63 /* New */,
+				F2C6CD661A96FCC100805B63 /* Mapa */,
 				F2C502EE1A9632D400AF2CAC /* Models */,
 				F263DED01A9483A500C7E3C9 /* Frameworks */,
 				F2E574811A92AD5F00D9F917 /* static */,
@@ -207,8 +244,6 @@
 				F2E574591A928AFE00D9F917 /* AppDelegate.m */,
 				F2B492D51A969CCA00E98FCA /* Home.h */,
 				F2B492D61A969CCA00E98FCA /* Home.m */,
-				F263DECC1A947EF100C7E3C9 /* Mapa.h */,
-				F263DECD1A947EF100C7E3C9 /* Mapa.m */,
 				F2E5745E1A928AFE00D9F917 /* Main.storyboard */,
 				F2E574611A928AFE00D9F917 /* Images.xcassets */,
 				F2E574631A928AFE00D9F917 /* LaunchScreen.xib */,
@@ -256,11 +291,11 @@
 		F2E574811A92AD5F00D9F917 /* static */ = {
 			isa = PBXGroup;
 			children = (
+				F2C6CD6D1A97030800805B63 /* menu.png */,
+				F2C6CD671A96FD2B00805B63 /* drink.png */,
 				F2E574821A92AD5F00D9F917 /* list.png */,
 				F2E574831A92AD5F00D9F917 /* map.png */,
 				F2E574841A92AD5F00D9F917 /* profile.png */,
-				F2EC77101A947D5600BE6545 /* MapViewController.h */,
-				F2EC77111A947D5600BE6545 /* MapViewController.m */,
 			);
 			path = static;
 			sourceTree = "<group>";
@@ -345,6 +380,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C6CD6E1A97030800805B63 /* menu.png in Resources */,
+				F2C6CD681A96FD2B00805B63 /* drink.png in Resources */,
 				F2E574601A928AFE00D9F917 /* Main.storyboard in Resources */,
 				F2E574871A92AD5F00D9F917 /* profile.png in Resources */,
 				F2E574651A928AFE00D9F917 /* LaunchScreen.xib in Resources */,
@@ -370,10 +407,11 @@
 			files = (
 				F2E5745A1A928AFE00D9F917 /* AppDelegate.m in Sources */,
 				F2E574571A928AFE00D9F917 /* main.m in Sources */,
+				F2C6CD711A97045000805B63 /* Detail.m in Sources */,
+				F2C6CD6B1A96FEBC00805B63 /* New.m in Sources */,
 				F2B492D71A969CCA00E98FCA /* Home.m in Sources */,
 				F2C502F11A9632F200AF2CAC /* CeldaBar.m in Sources */,
 				F263DECE1A947EF100C7E3C9 /* Mapa.m in Sources */,
-				F2EC77121A947D5600BE6545 /* MapViewController.m in Sources */,
 				F2E5747D1A928B8F00D9F917 /* SWRevealViewController.m in Sources */,
 				F2E574801A929C3300D9F917 /* MenuViewController.m in Sources */,
 			);
