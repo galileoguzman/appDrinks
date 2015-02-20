@@ -13,6 +13,8 @@
 #import <ParseUI/PFQueryTableViewController.h>
 #import "CeldaBar.h"
 
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 @interface Home ()
 
 @end
@@ -46,6 +48,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xFE9A2E)];
+    
+    self.title = @"Home";
+    
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.barButtonMenu setTarget: self.revealViewController];
+        [self.barButtonMenu setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
 }
 
 
@@ -77,6 +91,12 @@
     
     cell.lblDescripcionBar.text = [object objectForKey:@"description"];
     
+    cell.imgBar.image = [UIImage imageNamed:@"imageBar"];
+    PFFile *thumbnail = [object objectForKey:@"imageBar"];
+    PFImageView *thumbnailImageView = (PFImageView*)[cell.imgBar];
+    thumbnailImageView.image = [UIImage imageNamed:@"drink.png"];
+    thumbnailImageView.file = thumbnail;
+    [thumbnailImageView loadInBackground];
     
     //cell.imageView.image = [UIImage imageNamed:@"note"];
     // Configure the cell
@@ -93,7 +113,7 @@
 {
     [super objectsDidLoad:error];
     
-    NSLog(@"error: %@", [error localizedDescription]);
+    //NSLog(@"error: %@", [error localizedDescription]);
 }- (IBAction)btnRefreshData:(id)sender {
 }
 @end

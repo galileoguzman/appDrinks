@@ -8,6 +8,10 @@
 
 #import "New.h"
 #import <Parse/Parse.h>
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+UIImage *chosenImage;
 
 @interface New ()
 
@@ -18,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xFE9A2E)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,12 +58,19 @@
         obj[@"latitude"] = self.lblLatitudeBar.text;
         obj[@"longitude"] = self.lblLongitudeBar.text;
         
+        
+        NSData *imageData = UIImagePNGRepresentation(chosenImage);
+        PFFile *imageFile = [PFFile fileWithName:@"imageBar.png" data:imageData];
+        obj[@"imageBar"] = imageFile;
+        
+        
         [obj saveInBackground];
         
         self.lblNameBar.text = nil;
         self.lblDescriptionBar.text = nil;
-        self.lblLatitudeBar.text = @"";
-        self.lblLongitudeBar.text = @"";
+        self.lblLatitudeBar.text = nil;
+        self.lblLongitudeBar.text = nil;
+        self.imgImageBar = nil;
         
         [self performSegueWithIdentifier:@"backToHomeFromNew" sender:self];
     }
@@ -69,4 +81,43 @@
 - (IBAction)btnCancelSender:(id)sender {
     [self performSegueWithIdentifier:@"backToHomeFromNew" sender:self];
 }
+
+- (IBAction)btnAddImage:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fotografia"
+                                                    message:@"Elegir fotografía de"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancelar"
+                                          otherButtonTitles:@"Camara", @"Carrete", nil];
+    [alert show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    if(buttonIndex == 0)
+    {
+        NSLog(@"Cancelar");
+    }
+    else if(buttonIndex == 1)
+    {
+        NSLog(@"Camara");
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    else if(buttonIndex == 2)
+    {
+        NSLog(@"Carrete");
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imgImageBar.image = chosenImage;
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end

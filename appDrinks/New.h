@@ -9,11 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface New : UIViewController
+//Labels
 @property (strong, nonatomic) IBOutlet UITextField *lblNameBar;
 @property (strong, nonatomic) IBOutlet UITextField *lblDescriptionBar;
 @property (strong, nonatomic) IBOutlet UITextField *lblLatitudeBar;
 @property (strong, nonatomic) IBOutlet UITextField *lblLongitudeBar;
+
+//Images
+
+@property (strong, nonatomic) IBOutlet UIImageView *imgImageBar;
+
+//Buttons
 - (IBAction)btnSaveInParseSender:(id)sender;
 - (IBAction)btnCancelSender:(id)sender;
+- (IBAction)btnAddImage:(id)sender;
 
 @end
